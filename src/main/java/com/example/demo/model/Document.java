@@ -22,7 +22,7 @@ public class Document {
 	@Column(name = "name")
 	private String name;
 	@Column(name = "version")
-	private double version;
+	private String version;
 	@Column(name = "fileUrl")
 	private String fileUrl;
 	@CreationTimestamp
@@ -46,11 +46,11 @@ public class Document {
 		this.name = name;
 	}
 
-	public double getVersion() {
+	public String getVersion() {
 		return version;
 	}
 
-	public void setVersion(double version) {
+	public void setVersion(String version) {
 		this.version = version;
 	}
 
