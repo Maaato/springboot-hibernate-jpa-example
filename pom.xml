@@ -17,7 +17,7 @@
 
 	<properties>
 		<project.test.result.directory>${project.build.directory}/test-results</project.test.result.directory>
-		<sonar.host.url>http://sonarqube-cicd-admin.apps.cluster-30b9.30b9.sandbox1217.opentlc.com</sonar.host.url>
+		<sonar.host.url>https://sonarqube-cicd-admin.apps.cluster-30b9.30b9.sandbox1217.opentlc.com</sonar.host.url>
 		<sonar.login>bf5f1808e01ed083277663689969a6a171912842</sonar.login>
 		<sonar.language>java</sonar.language>
 		<sonar.scm.provider>git</sonar.scm.provider>
