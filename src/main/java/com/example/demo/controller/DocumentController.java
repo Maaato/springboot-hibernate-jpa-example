@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.model.Document;
 import com.example.demo.service.DocumentService;
 
@@ -34,7 +35,7 @@ public class DocumentController {
 	public ResponseEntity<Document> createDocument(@RequestBody Document document){
 		return ResponseEntity.ok().body(this.documentService.createDocument(document));
 	}
-	@PutMapping("/documents/{id}")
+	@PutMapping("/documents/{id}") 
 	public ResponseEntity<Document> updateDocument(@PathVariable long id,@RequestBody Document document){
 		document.setId(id);
 		return ResponseEntity.ok().body(this.documentService.updateDocument(document));
