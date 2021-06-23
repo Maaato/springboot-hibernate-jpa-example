@@ -16,13 +16,13 @@
 	<description>Demo project for Spring Boot,Hibernate,JPA,RESTFUL</description>
 
 	<properties>
-		<project.test.result.directory>${project.build.directory}/test-results</project.test.result.directory>
+		<!--  <project.test.result.directory>${project.build.directory}/test-results</project.test.result.directory>
 		<sonar.host.url>https://sonarqube-cicd-admin.apps.cluster-30b9.30b9.sandbox1217.opentlc.com</sonar.host.url>
 		<sonar.login>bf5f1808e01ed083277663689969a6a171912842</sonar.login>
 		<sonar.language>java</sonar.language>
 		<sonar.scm.provider>git</sonar.scm.provider>
 		<sonar.java.codeCoveragePlugin>jacoco</sonar.java.codeCoveragePlugin>
-		<sonar.coverage.jacoco.xmlReportPaths>${project.test.result.directory}/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+		<sonar.coverage.jacoco.xmlReportPaths>${project.test.result.directory}/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>-->
 		<java.version>1.8</java.version>
 	</properties>
 
@@ -60,16 +60,16 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.sonarsource.scanner.maven</groupId>
 				<artifactId>sonar-maven-plugin</artifactId>
 				<version>3.7.0.1746</version>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M4</version>
@@ -77,7 +77,7 @@
 					<argLine>${jacocoArgLine}</argLine>
 					<reportsDirectory>${project.test.result.directory}/surefire</reportsDirectory>
 				</configuration>
-			</plugin>
+			</plugin> 
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -105,7 +105,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 
